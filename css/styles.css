@@ -155,7 +155,7 @@ HEADER SECTION
 
 .link:hover .contact-icon,
 .link:focus .contact-icon {
-  fill: var(--accent-collor);
+  fill: currentColor;
 }
 
 .contact-icon {
