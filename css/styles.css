@@ -176,7 +176,7 @@ HEADER SECTION
 HERO SECTION
 -------------------- */
 
-.hero .container {
+.hero {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -240,12 +240,22 @@ OUR FEATURES SECTION
 }
 
 .features-list .list-item {
+  display: block;
   flex-basis: calc(100% / 4);
   /* flex-basis: calc((var(--container-width)-30px) / 4); Почему не работает?*/
 }
 
 .features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-bottom: 30px;
+  height: 120px;
+  width: 100%;
+
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
 }
 
 .features-subtitle {
@@ -369,7 +379,11 @@ OUR-CLIENTS SECTION
 }
 
 .client-link {
-  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
 
   border: 1px var(--icon-color) solid;
   border-radius: 4px;
@@ -514,7 +528,11 @@ address > .link {
   font-size: 14px;
 }
 
-.footer-section address:not(:last-child) {
+.office-adress{
+  margin-bottom: 9px;
+}
+
+.left-collumn .link:not(:last-child) {
   margin-bottom: 9px;
 }
 
